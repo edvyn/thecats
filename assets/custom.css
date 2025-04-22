@@ -148,7 +148,7 @@ body{
 .card-hover:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: #85ce30;
+    border-color: #b4566f;
   }
   
 .card-hover h5 {
@@ -160,7 +160,7 @@ body{
   }
 
 .bg-felino{
-    background-color: #84ce3060;
+    background-color: #fa76992f;
   }
   
 
@@ -177,7 +177,7 @@ body{
 }
 
 .card-custom-bg {
-  background-color: #84ce3062;
+  background-color: #fa76992f;
   transition: all 0.3s ease-in-out;
   border: 2px solid transparent;
 }
@@ -186,13 +186,13 @@ body{
   padding-top: 70px;
 }
 .card-custom-bg:hover {
-  border: 2px solid #8ece30;
+  border: 2px solid #b4566f;
   transform: scale(1.02);
-  background-color: #95e93534;
+  background-color: #fa769915;
 }
 
 #services i{
-    color: black;
+    color: #b4566f;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
