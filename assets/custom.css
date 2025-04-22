@@ -230,9 +230,9 @@ body{
   color: white;
 }
 
-.icon-instagram { color: #25D366; }
-.icon-facebook { color: #25D366; }
-.icon-whatsapp { color: #25D366; }
+.icon-instagram { color: #85ce30; }
+.icon-facebook { color: #85ce30; }
+.icon-whatsapp { color: #85ce30; }
 
 #sobre-nos{
   background-color: #242424;
@@ -255,4 +255,8 @@ body{
 
 #visitas h5{
   color: #67a124;
+}
+#contato strong{
+  color: #85ce30;
+  font-weight: bold;
 }
