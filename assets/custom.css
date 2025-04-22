@@ -75,9 +75,6 @@ body{
     max-width: 600px;
 }
 
-.hero .btn{
-  background-color: #8ece30;
-}
 .btn {
   background-color: var(--secondary-color);
   color: white;
@@ -91,8 +88,8 @@ body{
 }
 
 .btn:hover {
-  border: 1px solid #b4566f;
-  color: #fa7699;
+  border: 1px solid #85ce30;
+  color: #85ce30;
   background: white;
 }
 
@@ -183,7 +180,7 @@ body{
 }
 
 .container{
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .card-custom-bg:hover {
   border: 2px solid #b4566f;
