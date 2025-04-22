@@ -183,13 +183,13 @@ body{
   padding-top: 40px;
 }
 .card-custom-bg:hover {
-  border: 2px solid #b4566f;
+  border: 2px solid #5d921f;
   transform: scale(1.02);
-  background-color: #fa769915;
+  background-color: #84ce301c;
 }
 
 #services i{
-    color: #b4566f;
+    color: #85ce30;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
