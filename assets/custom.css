@@ -260,3 +260,11 @@ body{
   color: #85ce30;
   font-weight: bold;
 }
+.blockquote{
+  background-color: #ebebeb98;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #242424;
+}
