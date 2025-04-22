@@ -179,9 +179,6 @@ body{
   border: 2px solid #85ce30;
 }
 
-.container{
-  padding-top: 40px;
-}
 .card-custom-bg:hover {
   border: 2px solid #5d921f;
   transform: scale(1.02);
