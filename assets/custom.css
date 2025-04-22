@@ -157,7 +157,7 @@ body{
   }
 
 .bg-felino{
-    background-color: #fa76992f;
+    background-color: #ebebeb98;
   }
   
 
@@ -174,9 +174,9 @@ body{
 }
 
 .card-custom-bg {
-  background-color: #fa76992f;
+  background-color: #ebebeb98;
   transition: all 0.3s ease-in-out;
-  border: 2px solid transparent;
+  border: 2px solid #85ce30;
 }
 
 .container{
