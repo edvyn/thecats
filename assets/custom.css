@@ -79,7 +79,7 @@ body{
   background-color: #8ece30;
 }
 .btn {
-  background-color: #FA7699;
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px 32px;
   font-size: 1.2rem;
