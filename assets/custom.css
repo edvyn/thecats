@@ -24,7 +24,7 @@ body{
   }
 
   .navbar a:hover {
-    color: #fa7699;
+    color: #85ce30;
   }
   
   .navbar .nav-link.disabled {
@@ -97,6 +97,7 @@ body{
 @media screen and (max-width:768px){
     .hero{
         height: 80vh;
+        background-color: #5a8d2194;
     }
     .navbar{
         background-color: white;
@@ -128,8 +129,9 @@ body{
     font-size: 1.2rem;
 }
 
-.welcome strong{
+.welcome span{
     color: #85ce30;
+    font-weight: bold;
 }
 
 .carousel-img {
@@ -176,13 +178,12 @@ body{
 .card-custom-bg {
   background-color: #ebebeb98;
   transition: all 0.3s ease-in-out;
-  border: 2px solid #85ce30;
+  border: 1px solid #85ce30;
 }
 
 .card-custom-bg:hover {
-  border: 2px solid #5d921f;
+  border: 1px solid #78c224;
   transform: scale(1.02);
-  background-color: #84ce301c;
 }
 
 #services i{
@@ -190,9 +191,23 @@ body{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+#services p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #242424;
+}
+
+#services h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #242424;
+}
 #tutores img{
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
   
 }
 #tutores{
@@ -204,6 +219,40 @@ body{
   font-weight: bold;
 }
 
+.title-destaque{
+  color: white;
+}
+.title-destaque2{
+  color: #242424;
+}
+#uti, #plantao{
+  background-color: #242424;
+  color: white;
+}
+
 .icon-instagram { color: #25D366; }
 .icon-facebook { color: #25D366; }
 .icon-whatsapp { color: #25D366; }
+
+#sobre-nos{
+  background-color: #242424;
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+.about-box{
+  background-color: #667c4c2f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #f3f3f3;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: #85ce30;
+}
+
+#visitas h5{
+  color: #67a124;
+}
