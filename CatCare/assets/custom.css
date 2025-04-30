@@ -1,0 +1,264 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar img {
+  width: 170px;
+
+}
+
+.navbar a {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  color: #FF832E;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #FF832E;
+}
+
+.navbar .nav-link.disabled {
+  opacity: 0.6;
+}
+
+.custom-width-nav{
+  max-width: 1280px;
+}
+
+.highlight {
+  color: #FF832E;
+  font-weight: bold;
+}
+
+.body-highlight{
+  font-weight: bold;
+  border-left: 6px solid #FF832E;
+  padding-left: 10px;
+}
+
+#hero {
+  height: 50vh; /* ou ajuste conforme quiser, ex: 60vh, 80vh */
+  min-height: 500px; /* altura mínima para não ficar pequeno em telas pequenas */
+  position: relative;
+  margin-top: 110px;
+  width: 100%;
+}
+
+#hero h1{
+  line-height: 1.1;
+  max-width: 700px;
+}
+
+#hero p{
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#hero span{
+  font-weight: bold;
+  color: #FF832E;
+}
+
+
+#heroCarousel, 
+#heroCarousel .carousel-inner, 
+#heroCarousel .carousel-item, 
+#heroCarousel img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero-container{
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:768px){
+
+  .navbar{
+      padding-bottom: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #hero{
+    height: 70vh;
+    border-radius: 0px;
+  }
+  #hero-container{
+    width: 100%;
+  }
+}
+
+.btn-primary {
+  background-color: #FF832E;
+  border-color: #FF832E;
+}
+#btn-hero{
+  background-color: #FF832E;
+  border-color: #FF832E;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #FF832E;
+  transition: all 0.3s ease;
+  color: white;
+}
+#btn-hero:hover{
+  background-color: white;
+  color: #FF832E;
+  border: 1px solid #FF832E;
+}
+#btn-hero:focus{
+  background-color: white;
+  color: #FF832E;
+  border: 1px solid #FF832E;
+}
+
+.navbar #btn-hero{
+  color: white;
+}
+.navbar #btn-hero:hover{
+  color: #FF832E;
+}
+
+
+#cat-section-2{
+  width: 100%;
+  max-width: 350px;
+}
+
+#section-2-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+
+}
+#section-2{
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-section-2{
+  padding: 10px;
+  background-color: #ff822e17;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #section-2-container {
+    padding: 10px;
+  }
+  #section-2 {
+    flex-direction: column;
+  }
+  #cat-section-2 {
+    width: 100%;
+    max-width: 200px;
+  }
+  #cat-section-2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+#btn-nav{
+  background-color: #FF832E;
+  border-color: #FF832E;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #FF832E;
+  transition: all 0.3s ease;
+  color: white;
+}
+#btn-nav:hover{
+  background-color: white;
+  color: #FF832E;
+  border: 1px solid #FF832E;
+}
+#btn-nav:focus{
+  background-color: white;
+  color: #FF832E;
+  border: 1px solid #FF832E;
+}
+
+
+
+/*planos*/
+
+#planos p{
+  max-width: 600px;
+}
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.container-planos-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.container-planos-title h2{
+  color: #FF832E;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.plan-list li {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-list svg {
+  flex-shrink: 0;
+  color: #FF832E;
+  width: 1.1em;
+  height: 1.1em;
+  margin-top: 3px;
+}
+
+#depoimentos{
+
+}
+
+/*contato*/
+#contato{
+  background-color: #0749AC;
+}
+
+/*footer*/
+.footer-highlight{
+  font-weight: bold;
+  border-left: 4px solid #FF832E;
+  padding-left: 5px;
+}
