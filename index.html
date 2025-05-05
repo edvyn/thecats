@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="assets/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 
 </head>
 <body>
@@ -21,8 +23,9 @@
       <!-- Botão do menu mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-list custom-toggler-icon"></i>
       </button>
+
   
       <!-- Centro e direita -->
       <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
@@ -60,8 +63,8 @@
   
         <!-- Botões à direita -->
         <div class="d-flex flex-column flex-lg-row gap-2 right-btns">
-          <a href="https://meu.simplespet.com.br/#/access/login?a=silvia-kurth" target="_blank" class="btn pet-btn">Meu Pet</a>
-          <a href="#" class="btn plan-btn">CatCare</a>
+          <a href="https://meu.simplespet.com.br/#/access/login?a=silvia-kurth" target="_blank" class="btn" id="nav-btn">Meu Pet</a>
+          <a href="" class="btn" id="nav-btn">CatCare</a>
         </div>
         
   
@@ -70,36 +73,76 @@
   </nav>
 
 <!-- Hero Section -->
-  <section class="hero">
-      <div class="container hero-container">
-          <div class="row align-items-center">
-              <div class="col-md-12 mx-auto
-              ">
-              <div class="hero-text">
-                  <div class="logo-hero">
-                      <img src="assets/img/logo-hero.svg" alt="">
-                  </div>
-                  <p class="lead">Clínica especializada no cuidado exclusivo de felinos em Belo Horizonte, com ambiente cat-friendly e equipe apaixonada por gatos.</p>
-                  <a href="#" class="btn mt-3">Agende Sua Consulta</a>
-              </div>
-              </div>
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto do Hero -->
+      <div class="col-md-5">
+        <div class="hero-text">
+          <div class="logo-hero">
+            <img src="assets/img/logo-principal 1.webp" alt="Logo da clínica" id="logo-hero">
           </div>
+          <p class="lead">
+            Clínica especializada no cuidado exclusivo de felinos em Belo Horizonte, com ambiente cat-friendly e equipe apaixonada por gatos.
+          </p>
+          <a href="https://wa.me/5531987654321" target="_blank" class="btn">Agende Sua Consulta</a>
+        </div>
       </div>
-  </section>
+
+      <!-- Imagem ao lado -->
+      <div class="col-md-4 text-center hero-right position-relative">
+        <img src="assets/img/silvia hero.png" alt="Gato feliz na clínica" class="img-fluid">
+        
+        
+      <!-- Selos de confiança -->
+      <div class="trust-badges position-absolute">
+        <div class="trust-badge">
+          <i class="bi bi-award-fill"></i>
+          <span>Plantão 24 horas</span>
+        </div>
+        <div class="trust-badge">
+          <i class="bi bi-heart-fill"></i>
+          <span>Ambiente 100% cat-friendly</span>
+        </div>
+        <div class="trust-badge">
+          <i class="bi bi-shield-check"></i>
+          <span>Especialistas em medicina felina</span>
+        </div>
+        <div class="trust-badge">
+          <i class="bi bi-hospital"></i>
+          <span>UTI exclusiva para gatos</span>
+        </div>
+      </div>
+      
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <section class="welcome">
     <div class="container">
       <div class="row align-items-center">
   
         <!-- Carrossel à esquerda -->
-        <div class="col-md-6 mb-4 mb-md-0">
+        <div class="col-md-5 mb-4 mb-md-0">
           <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/img/Frame 4.png" class="d-block w-100 carousel-img" alt="Slide 1">
+                <img src="assets/img/thecats - carrossel/slice (1).png" class="d-block w-100 carousel-img" alt="Slide 1">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/Frame 5.png" class="d-block w-100 carousel-img" alt="Slide 2">
+                <img src="assets/img/thecats - carrossel/slice (2).png" class="d-block w-100 carousel-img" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/thecats - carrossel/slice (3).png" class="d-block w-100 carousel-img" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/thecats - carrossel/slice (4).png" class="d-block w-100 carousel-img" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/thecats - carrossel/slice (5).png" class="d-block w-100 carousel-img" alt="Slide 1">
               </div>
             </div>
   
@@ -117,7 +160,7 @@
   
         <!-- Texto à direita -->
         <div class="col-md-6">
-          <div class="text-box p-4">
+          <div class="text-box">
             <h2 class="mb-3">Bem-vindo à <span>The Cats Medicina Felina</span></h2>
             <p>Somos uma <strong>veterinária para gatos em Belo Horizonte</strong>, dedicada a oferecer saúde, conforto e tranquilidade aos felinos e seus tutores. Nosso espaço foi projetado para o bem-estar dos gatos, desde a sala de espera até os equipamentos de última geração.</p>
           </div>
@@ -162,7 +205,7 @@
       <!-- CTA Final -->
       <div class="text-center mt-5">
         <h5 class="mb-4">Seu gato merece o melhor cuidado que a medicina pode oferecer!</h5>
-        <a href="#agendamento" class="btn">Marque Sua Visita</a>
+        <a href="https://wa.me/5531987654321" target="_blank" class="btn">Marque Sua Visita</a>
       </div>
   
     </div>
@@ -223,44 +266,76 @@
         </div>
       </div>
   
-      <div class="row gy-4">
+      <!-- Carrossel responsivo -->
+      <div class="equipe-carousel d-flex gap-3 overflow-auto pb-2">
         <!-- Dra. Silvia Kurth -->
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded h-100 shadow-sm text-center">
-            <img src="assets/img/placeholder.png" alt="Dra. Silvia Kurth" class="rounded-circle mb-3" width="100" height="100">
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/Silvia.png" alt="Dra. Silvia Kurth" class="rounded-circle mb-3" width="220" height="220">
             <h5 class="fw-bold">Dra. Silvia Kurth</h5>
             <p class="small mb-0">Fundadora e especialista em medicina felina, com mais de 15 anos de experiência.</p>
           </div>
         </div>
   
-        <!-- Dr. Pedro Lima -->
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded h-100 shadow-sm text-center">
-            <img src="assets/img/placeholder.png" alt="Dr. Pedro Lima" class="rounded-circle mb-3" width="100" height="100">
-            <h5 class="fw-bold">Dr. Pedro Lima</h5>
-            <p class="small mb-0">Veterinário especializado em diagnósticos por imagem (ultrassom e radiografia).</p>
+        <!-- Repetido para os demais profissionais -->
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/luisa.png" alt="Dra. Luísa Franklin" class="rounded-circle mb-3" width="220" height="220">
+            <h5 class="fw-bold">Dra. Luísa Franklin</h5>
+            <p class="small mb-0">Médica Clínica Especialista  em Felinos Responsável pela Internação.</p>
           </div>
         </div>
   
-        <!-- Dra. Ana Costa -->
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded h-100 shadow-sm text-center">
-            <img src="assets/img/placeholder.png"alt="Dra. Ana Costa" class="rounded-circle mb-3" width="100" height="100">
-            <h5 class="fw-bold">Dra. Ana Costa</h5>
-            <p class="small mb-0">Mestre em dermatologia felina, focada em alergias e cuidados com a pele.</p>
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/samara.png" alt="Dra. Samara Lucena" class="rounded-circle mb-3" width="220" height="220">
+            <h5 class="fw-bold">Dra. Samara Lucena</h5>
+            <p class="small mb-0">Médica Clínica Especialista em Felinos e Nefrologista que fica no atendimento.</p>
           </div>
         </div>
   
-        <!-- Téc. Mariana Souza -->
-        <div class="col-md-6 col-lg-3">
-          <div class="p-4 border rounded h-100 shadow-sm text-center">
-            <img src="assets/img/placeholder.png" alt="Téc. Mariana Souza" class="rounded-circle mb-3" width="100" height="100">
-            <h5 class="fw-bold">Téc. Mariana Souza</h5>
-            <p class="small mb-0">Auxiliar dedicada ao bem-estar dos pacientes internados.</p>
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/leonardo.png" alt="Dr. Leonardo Loures" class="rounded-circle mb-3" width="220" height="220">
+            <h5 class="fw-bold">Dr. Leonardo Loures</h5>
+            <p class="small mb-0">Patologista.</p>
+          </div>
+        </div>
+  
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/gabriela.png" alt="Dra. Gabriela Medeiros" class="rounded-circle mb-3" width="220" height="220">
+            <h5 class="fw-bold">Dra. Gabriela Medeiros</h5>
+            <p class="small mb-0">Odontologista.</p>
+          </div>
+        </div>
+  
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/juliana.png" alt="Dra. Juliana Fulgêncio" class="rounded-circle mb-3" width="220" height="220">
+            <h5 class="fw-bold">Dra. Juliana Fulgêncio</h5>
+            <p class="small mb-0">Diagnóstico por imagem.</p>
+          </div>
+        </div>
+  
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/paula.png" alt="Dra. Paula Góis" class="rounded-circle mb-3" width="220" height="220">
+            <h5 class="fw-bold">Dra. Paula Góis</h5>
+            <p class="small mb-0">Veterinaria especializada em cirurgias de tecidos moles, microcirurgias e especialização em vídeo cirurgias em andamento.</p>
+          </div>
+        </div>
+  
+        <div class="flex-shrink-0" style="width: 250px;">
+          <div class="p-4 rounded h-100 text-center">
+            <img src="assets/img/thecats - profissionais/sized/webp/fernanda.png" alt="Dra. Fernanda Oliveira" class="rounded-circle mb-3" width="220" height="220">
+            <h5 class="fw-bold">Dra. Fernanda Oliveira</h5>
+            <p class="small mb-0">Especializada em anestesiologia veterinária pela UFMG.</p>
           </div>
         </div>
       </div>
   
+      <!-- Citação -->
       <div class="row justify-content-center mt-5">
         <div class="col-lg-8 text-center">
           <blockquote class="blockquote">
@@ -271,6 +346,8 @@
       </div>
     </div>
   </section>
+  
+  
 
 <!-- Seção com fundo escuro -->
 <div class="bg-light" style="width: 100%;">
@@ -363,7 +440,7 @@
 
     <!-- CTA -->
     <div class="text-center mt-5">
-      <a href="#contato" class="btn btn-light">Cuide do Seu Gato Conosco</a>
+      <a href="https://wa.me/5531987654321" target="_blank" class="btn">Cuide do Seu Gato Conosco</a>
     </div>
 
   </section>
@@ -416,7 +493,7 @@
           <li> <strong>Ultrassom Beira-Leito:</strong> Diagnósticos rápidos com o portátil Lumine Phillips, sem estresse extra.</li>
           <li> <strong>Incubadora Ideal:</strong> Controle total de temperatura, umidade e oxigênio para conforto e recuperação.</li>
         </ul>
-        <a href="#" class="btn mt-3" target="_blank">
+        <a href="https://wa.me/5531987654321" target="_blank" class="btn mt-3" target="_blank">
           Fale com a Equipe
         </a>
       </div>
@@ -458,73 +535,110 @@
       </div>
     </div>
     <div class="text-center mt-5">
-      <a href="#agendamento" class="btn">Agende Sua Primeira Consulta</a>
+      <a href="https://wa.me/5531987654321" target="_blank" class="btn">Agende Sua Primeira Consulta</a>
     </div>
   </div>
 </section>
 
-  <section class="container my-5" id="tutores">
-    <h2 class="text-center mb-4 fs-1 custom-heading"><span class="title-destaque2">O que dizem os </span> tutores:</h2>
-  
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-  
-        <div class="carousel-item active">
-          <div class="row align-items-center">
-            <div class="col-md-4 text-center">
-              <img src="assets/img/gato 1.jpg" class="testimonial-img img-fluid" alt="Gato Simba">
-            </div>
-            <div class="col-md-8">
-              <blockquote class="blockquote">
-                <p class="mb-3">"A The Cats salvou meu gatinho com uma cirurgia felina de emergência. Equipe incrível!"</p>
-                <footer class="blockquote-footer">Mariana S., tutora do Simba</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-  
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-4 text-center">
-              <img src="assets/img/gato 2.jpg" class="testimonial-img img-fluid" alt="Gata Luna">
-            </div>
-            <div class="col-md-8">
-              <blockquote class="blockquote">
-                <p class="mb-3">"A vacinação para gatos aqui é rápida e meu gato nem percebeu!"</p>
-                <footer class="blockquote-footer">João P., tutor da Luna</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-  
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-4 text-center">
-              <img src="assets/img/gato 3.jpg" class="testimonial-img img-fluid" alt="Gata Mimi">
-            </div>
-            <div class="col-md-8">
-              <blockquote class="blockquote">
-                <p class="mb-3">"O ambiente cat-friendly faz toda a diferença, meu gato fica calmo!"</p>
-                <footer class="blockquote-footer">Carla M., tutora da Mimi</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-  
+<section class="container my-5" id="tutores">
+  <h2 class="text-center mb-4 fs-2 custom-heading">
+    <span class="title-destaque2">O que dizem os </span> tutores:
+  </h2>
+
+  <div class="d-flex gap-3 overflow-auto pb-5">
+
+    <!-- Depoimento 1 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow  p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Nossa experiência na The Cats foi incrível. Odin foi extremamente bem atendido, com muita paciência e respeito. A Dra. Jordânia foi maravilhosa e o atendimento fez toda diferença!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Nádia Marques</p>
+        <small class="text-muted">Tutora do Odin • Atendimento Clínico</small>
       </div>
-  
-      <!-- Controles do carrossel -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
-  
     </div>
-  </section>
+
+    <!-- Depoimento 2 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Levei o Vivaldi e fui super bem atendida pela Dra. Larissa e Dra. Samara. Uma clínica em categoria 10. Exames bem feitos e explicações claras. Recomendo muito!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Ana Luiza Oliveira Souza</p>
+        <small class="text-muted">Tutora do Vivaldi • Consulta + Exames</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 3 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Deixei minha gatinha Francis hospedada por 1 semana. Depois ela passou por uma taratectomia e tudo correu bem! Recebi vídeos, carinho e muita atenção. Recomendo a todos!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Gabriela Demas</p>
+        <small class="text-muted">Tutora da Francis • Cirurgia + Hospedagem</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 4 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Nosso gato Gregório estava com um quadro bem agudo e fomos muito bem recebidos. A Vet Giovanna acompanhou tudo com muito carinho. Estamos muito felizes com o atendimento!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Pedro Brito</p>
+        <small class="text-muted">Tutor do Gregório • Atendimento Emergencial</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 5 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Em nome da família do Noah, gostaria de agradecer a todos da equipe The Cats que se dedicaram aos cuidados do nosso amado gatinho!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Noah da Ananda</p>
+        <small class="text-muted">Tutor do Noah • Acompanhamento</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 6 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Muito obrigada Luísa. Gostaria de agradecer vocês pelo carinho e dedicação com a Stellinha. Vocês fizeram um trabalho maravilhoso."</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Leo da Elisa Weber</p>
+        <small class="text-muted">Tutora da Stellinha • Cuidados contínuos</small>
+      </div>
+    </div>
+      <!-- Depoimento 7 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Até que enfim achamos uma clínica que conseguiu diagnosticar e tratar nossa gatinha. A veterinária foi super atenciosa, explicou tudo com clareza e, em pouco mais de um mês, nossa menina está praticamente curada. Valeu cada centavo."</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Kátia Rodrigues Sátiro</p>
+        <small class="text-muted">Tutora de gatinha em tratamento</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 8 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Levei uma gatinha resgatada que adotei e ficou internada por 2 semanas. Não poderia pedir um atendimento melhor. Excelência em atendimento, cuidados, profissionalismo e amor com os gatinhos."</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Daniel Alvares</p>
+        <small class="text-muted">Tutor de gatinha resgatada • Internação</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 9 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Me sinto em casa na The Cats! E também me sinto segura em deixar essa equipe cuidar dos meus gatos! Eles se sentem em casa lá! Dra. Giovanna é excelente!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Eleva Educacional</p>
+        <small class="text-muted">Tutora de múltiplos gatos • Acompanhamento</small>
+      </div>
+
+  </div>
+</section>
+
+
   
     
     <!-- Section: Entre em Contato -->
@@ -544,7 +658,7 @@
             <li><strong> Horário:</strong> Seg. a Sex., 8h às 18h | Sáb., 8h às 12h</li>
             <li><strong> Plantão 24h:</strong> Emergências atendidas a qualquer hora!</li>
           </ul>
-          <a href="#agendamento" class="btn mt-3 fs-5">Agende Sua Visita Agora</a>
+          <a href="https://wa.me/5531987654321" target="_blank" class="btn mt-3 fs-5">Agende Sua Visita Agora</a>
   
           <div class="mt-4 social-icons">
             <a href="https://instagram.com" target="_blank" class="me-3" style="text-decoration: none;">
@@ -582,6 +696,7 @@
   </a>
 
   <script src="assets/bootstrap.bundle.min.js"></script>
+  <script src="assets/custom.js"></script>
 
 </body>
 </html>
