@@ -16,11 +16,14 @@
   <title>CatCareVet</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- CSS do AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg fixed-top shadow">
-    <div class="container-fluid px-5 custom-width-nav">
+  
+  <nav class="navbar navbar-expand-lg fixed-top px-3" >
+    <div class="container-fluid custom-width-nav">
       
       <!-- Logo à esquerda -->
       <a class="navbar-brand" href="#">
@@ -42,7 +45,7 @@
             <a class="nav-link" aria-current="page" href="#">Planos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">beneficios</a>
+            <a class="nav-link" href="#services">benefícios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#plantao">dúvidas</a>
@@ -55,8 +58,8 @@
   
         <!-- Botões à direita -->
         <div class="d-flex flex-column flex-lg-row gap-2 right-btns">
-          <a href="https://meu.simplespet.com.br/#/access/login?a=silvia-kurth" target="_blank" class="btn" id="btn-nav">Meu Pet</a>
-          <a href="#" class="btn" id="btn-nav">The Cats</a>
+          <a href="https://meu.simplespet.com.br/#/access/login?a=silvia-kurth" target="_blank" id="btn-nav">Meu Pet</a>
+          <a href="#" id="btn-nav">The Cats</a>
         </div>
         
   
@@ -64,73 +67,141 @@
     </div>
   </nav>
 
-  <div class="container-hero" id="hero-container">
+  <div class="container-hero position-relative" id="hero-container">
+    <!-- Seção Hero -->
+    <section id="hero" class="position-relative overflow-hidden img-shadow-strong">
+      <div id="heroCarousel" class="carousel slide carousel-fade position-relative h-100" data-bs-ride="carousel" data-bs-interval="6000">
 
-    <!-- Primeira dobra / Hero -->
-    <section id="hero" class="position-relative overflow-hidden">
-      <div id="heroCarousel" class="carousel slide carousel-fade position-relative h-100" data-bs-ride="carousel" data-bs-interval="5000">
-        
-        <!-- Slides -->
         <div class="carousel-inner h-100">
           <div class="carousel-item active h-100">
-            <img src="assets/img/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg" class = "d-block w-100 h-100 object-fit-cover" alt="Gato fofo">
+            <img src="assets/img/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg" class="d-block w-100 h-100 zoom" alt="Gato fofo">
           </div>
-
           <div class="carousel-item h-100">
-            <img src="assets/img/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gato brincando">
+            <img src="assets/img/nine-koepfer-lpgAlv8I7V8-unsplash.jpg" class="d-block w-100 h-100 zoom" alt="Gato descansando">
           </div>
-
           <div class="carousel-item h-100">
-            <img src="assets/img/nine-koepfer-lpgAlv8I7V8-unsplash.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gato descansando">
-          </div>
-
-          <div class="carousel-item h-100">
-            <img src="assets/img/yerlin-matu-GtwiBmtJvaU-unsplash.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gato descansando">
+            <img src="assets/img/yerlin-matu-GtwiBmtJvaU-unsplash.jpg" class="d-block w-100 h-100 zoom" alt="Gato descansando">
           </div>
         </div>
 
         <!-- Overlay escuro -->
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.7); z-index: 2;"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.6); z-index: 2;"></div>
 
-        <!-- Conteúdo dentro de um container centralizado -->
-        <div class="container position-absolute top-50 start-50 translate-middle text-white" style="z-index: 3; max-width: 1200px;" id="hero-content">
-          <h1 class="mb-3 display-4 fw-bold text-start">Plano de Saúde Exclusivo para seu Felino</h1>
-          <p class="lead mb-4 text-start">Prevenção hoje: <span>tranquilidade sempre!</span></p>
-          <a href="#planos" class="btn" id="btn-hero">CONHEÇA NOSSOS PLANOS</a>
+        <!-- Conteúdo centralizado -->
+        <div class="container position-absolute top-50 start-50 translate-middle text-white text-start" style="z-index: 3; max-width: 1200px;" id="hero-content">
+          <h1 class="mb-3 display-4 fw-bold" data-aos="fade-down">Plano de Saúde Exclusivo para seu Felino</h1>
+          <p class="lead mb-4">Prevenção hoje: <span>tranquilidade sempre!</span></p>
+          <a href="#planos" class="btn btn-light" id="btn-hero">CONHEÇA NOSSOS PLANOS</a>
         </div>
-
       </div>
     </section>
-  </div>
-<!-- Segunda Seção -->
-<section id="section-2">
-  <div class="container" id="section-2-container">
-    <div class="row align-items-center" style="max-width: 1200px; margin: 0 auto;">
-      
-      <!-- Imagem à esquerda -->
-      <div class="col-lg-5 mb-4 mb-lg-0" id="cat-section-2-container">
-        <img src="assets/img/cat section-2.png" alt="Gatinho feliz" class="img-fluid rounded" id="cat-section-2">
+
+    <div class="div-interseccao d-flex justify-content-between flex-wrap text-dark text-center">
+      <div class="item-intersecao" data-aos="fade-down" data-aos-once="true">
+        <i class="bi bi-geo-alt-fill fs-2 mb-2"></i>
+        Disponível 24 horas
       </div>
-
-      <!-- Texto à direita -->
-      <div class="col-lg-6" id="text-section-2">
-        <h2 class="mb-4 body-highlight">Por que seu gatinho merece o <span class="highlight">CatCare?</span></h2>
-
-        <h5 class="fw-bold mb-2">Um lar longe do lar para o seu gatinho</h5>
-        <p class="mb-1">Imagine seu pequeno companheiro em um ambiente onde ele se sente seguro, sem latidos ou odores estressantes.</p>
-        <p class="mb-1">Um lugar onde cada profissional entende as particularidades do seu bichano, desde seu ronronar até seus olhares mais sutis.</p>
-        <p>Aqui, seu filho de quatro patas recebe atenção exclusivamente felina.</p>
+      <div class="item-intersecao" data-aos="fade-down" data-aos-once="true" data-aos-delay="100">
+        <i class="bi bi-heart-pulse-fill fs-2 mb-2"></i>
+        Vacinas Inclusas
       </div>
-
+      <div class="item-intersecao" data-aos="fade-down" data-aos-once="true" data-aos-delay="200">
+        <i class="bi bi-heart-pulse-fill fs-2 mb-2"></i>
+        Planos sem carência
+      </div>
     </div>
+    
   </div>
-</section>
+  
+  <section class="section-2 ">
+    <div class="container">
+      <div class="row align-items-center" style="gap: 40px;">
+        <div class="col-md-6">
+          <img src="assets/img/cats-hug.png" alt="Gatinho confortável" class="img-fluid rounded" data-aos="fade-up" data-aos-once="true">
+        </div>
+        <div class="col-md-5">
+          <h2 class="mb-4 body-highlight" data-aos-delay="100" data-aos="fade-left" data-aos-once="true">Por que seu gatinho merece o <span class="highlight"> CatCareVet? </span></h2>
+          <h3 data-aos-delay="200" data-aos="fade-left" data-aos-once="true"><strong>Um lar longe do lar para o seu gatinho</strong></h3>
+          <p>Imagine seu pequeno companheiro em um ambiente onde ele se sente seguro, sem latidos ou odores estressantes.</p>
+          <p>Um lugar onde cada profissional entende as particularidades do seu bichano, desde seu ronronar até seus olhares mais sutis.</p>
+          <p>Aqui, seu filho de quatro patas recebe atenção exclusivamente felina.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="wcu">
+    <div class="container text-center">
+      <h2 class="mb-4 fw-bold custom-heading" data-aos="fade-down">Por que aderir ao CatCareVet?</h2>
+  
+      <div class="row g-4 justify-content-center">
+        <!-- Card com plano -->
+        <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+          <div class="card card-hover h-100 border-4 shadow" style="border-color: #0749AC; position: relative; border-radius: 20px;">
+            <div class="position-absolute top-0 start-50 translate-middle badge bg-warning text-dark rounded-pill px-3 py-1" style="z-index: 1; margin-top: 0px;">
+              ⭐ MAIS ECONÔMICO ⭐
+            </div>
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title fw-bold" style="color: #0749AC;">Com o CatCareVet…</h5>
+              <ul class="mb-4 plan-list list-unstyled text-start">
+                <li><i class="bi bi-patch-check-fill"></i> Seu orçamento respira aliviado com economia de até 40%, permitindo mais mimos especiais</li>
+                <li><i class="bi bi-patch-check-fill"></i> Detectamos o que seu pequeno tenta esconder, porque conhecemos cada miado, cada olhar</li>
+                <li><i class="bi bi-patch-check-fill"></i> Você dorme tranquilo sabendo exatamente quanto investirá na saúde do seu filho felino</li>
+                <li><i class="bi bi-patch-check-fill"></i> Seu gatinho é recebido como membro da família em um ambiente onde cada ronronado importa</li>
+              </ul>
+              <a href="#formulario" class="btn btn-primary px-4 py-2" style="border-radius: 30px;">QUERO ESSA TRANQUILIDADE</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card sem plano -->
+        <div class="col-md-4" data-aos="fade-left" data-aos-delay="1300">
+          <div class="card card-hover h-100 border-0 shadow not-plan" style="border-radius: 20px;" id="sem-plano">
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              <h5 class="card-title fw-bold">Sem um plano de saúde...</h5>
+              <ul class="mb-4 plan-list list-unstyled text-start">
+                <li><i class="bi bi-x-circle-fill"></i> Seu gatinho esconde a dor até que ela se torne insuportável, quebrando seu coração</li>
+                <li><i class="bi bi-x-circle-fill"></i> O susto de uma emergência pode significar escolhas difíceis entre R$1.000 e R$5.000 inesperadamente</li>
+                <li><i class="bi bi-x-circle-fill"></i> Sem check-ups regulares, você perde momentos preciosos que poderiam ser de tratamento e cura</li>
+                <li><i class="bi bi-x-circle-fill"></i> Seu companheiro pode ter sua qualidade de vida comprometida quando o diagnóstico chega tarde demais</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
 
+  <section id="uti">
+    <section class="d-flex flex-column flex-lg-row align-items-stretch shadow-lg bg-dark">
+      <!-- Imagem à direita -->
+      <div class="col-12 col-lg-7">
+        <img src="assets/img/cat-uti.jpeg" alt="Gato saudável" class="w-100 h-100 object-fit-cover img-shadow-strong" data-aos="fade-right" data-aos-delay="300">
+      </div>
 
-
-
-
+      <div class="col-12 col-lg-5 d-flex flex-column justify-content-center py-5" id="uti-text" data-aos="fade-up" data-aos-delay="1300">
+        <h2 class="mb-3">UTI Felina de Referência</h2>
+        <p>Nossos pacientes têm acesso à tecnologia de ponta para diagnóstico e tratamento, em um ambiente exclusivamente pensado para gatos.</p>
+        <h5 class="mt-3 mb-2">Equipamentos Destacados:</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-patch-check-fill"></i> Suporte Respiratório Avançado</li>
+          <li><i class="bi bi-patch-check-fill"></i> Monitoramento Multiparamétrico</li>
+          <li><i class="bi bi-patch-check-fill"></i> Bombas de Infusão Precisas</li>
+          <li><i class="bi bi-patch-check-fill"></i> Ultrassom Portátil Lumine Phillips</li>
+          <li><i class="bi bi-patch-check-fill"></i> Desfibrilador Cardíaco</li>
+          <li><i class="bi bi-patch-check-fill"></i> Incubadora com Controle Ambiental</li>
+        </ul>
+        <a href="https://wa.me/5531987654321" target="_blank" class="btn" id="btn-hero" >
+          PROTEJA SEU GATO COM O CATCAREVET
+        </a>
+      </div>
+    </section>
+    
+  </section>
+  
 
 <!---planos-->
 
@@ -144,10 +215,11 @@
     <div class="row g-4">
       <!-- Plano Básico -->
       <div class="col-md-4">
-        <div class="card card-hover h-100 border-0 shadow" style="border-radius: 20px;">
+        <div class="card card-hover border-0 shadow" style="border-radius: 20px;">
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Plano Básico</h5>
-            <p class="card-text fs-4 fw-semibold">R$449,90/mês <br><small class="text-muted">(12x sem juros)</small></p>
+            <img src="assets/img/plano-basico.svg" alt="">
+            <p class="card-text fs-4 fw-semibold">R$449,90/mês <br><small>(12x sem juros)</small></p>
             <ul class="text-start mb-4 plan-list">
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 consulta anual</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Internação: até 3 dias (simples)</li>
@@ -165,13 +237,14 @@
 
       <!-- Plano Intermediário -->
       <div class="col-md-4">
-        <div class="card card-hover h-100 border-3 shadow" style="border-color: #FF832E; position: relative; border-radius: 20px;">
+        <div class="card card-hover border-3 shadow" style="border-color: #FF832E; position: relative; border-radius: 20px;">
           <div class="position-absolute top-0 start-50 translate-middle badge bg-warning text-dark rounded-pill px-3 py-1" style="z-index: 1; margin-top: 0px;">
             ⭐ MAIS POPULAR ⭐
           </div>
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Plano Intermediário</h5>
-            <p class="card-text fs-4 fw-semibold text-success">R$695,90/mês <br><small class="text-muted">(12x sem juros)</small></p>
+            <img src="assets/img/plano-medio.svg" alt="">
+            <p class="card-text fs-4 fw-semibold">R$695,90/mês <br><small>(12x sem juros)</small></p>
             <ul class="text-start mb-4 plan-list">
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>2 consultas por ano</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Internação: até 5 dias (simples)</li>
@@ -193,7 +266,8 @@
         <div class="card card-hover h-100 border-0 shadow" style="border-radius: 20px;">
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Plano Completo</h5>
-            <p class="card-text fs-4 fw-semibold text-success">R$875,90/mês <br><small class="text-muted">(12x sem juros)</small></p>
+            <img src="assets/img/plano-completo.svg" alt="">
+            <p class="card-text fs-4 fw-semibold">R$875,90/mês <br><small>(12x sem juros)</small></p>
             <ul class="text-start mb-4 plan-list">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
@@ -254,10 +328,12 @@
 </section>
 
 
-<section class="py-5 bg-dark" id="planos-multicat">
+<section class="bg-dark" id="planos-multicat">
   <div class="container text-center">
     <h2 class="mb-4 fw-bold highlight">Planos Família - Multicat</h2>
-    <p class="mb-5 text-white">Soluções especiais para quem tem mais de um felino, com economia progressiva para cada gatinho adicional.</p>
+    <p class="mb-2 text-white">Soluções especiais para quem tem mais de um felino, com economia progressiva para cada gatinho adicional.</p>
+    <img src="assets/img/multicat.svg" alt="ícone multicat" class="mb-4">
+
 
     <div class="row g-4">
       <!-- Multicat: 2 Gatos -->
@@ -270,17 +346,14 @@
               <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Consultas, exames e vacinas para 2 gatos</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Economia de R$379,90/mês comparado a planos individuais</li>
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO UM PLANO MULTICAT</a>
+            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
 
       <!-- Multicat: 3 Gatos -->
       <div class="col-md-4">
-        <div class="card card-hover h-100 border-3 shadow" style="border-color: #FF832E; position: relative; border-radius: 20px;">
-          <div class="position-absolute top-0 start-50 translate-middle badge bg-warning text-dark rounded-pill px-3 py-1" style="z-index: 1; margin-top: 0px;">
-            ⭐ MAIS ECONÔMICO ⭐
-          </div>
+        <div class="card card-hover h-100 border-3 shadow" style="border-radius: 20px;">
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Multicat: 3 Gatos</h5>
             <p class="card-text fs-4 fw-semibold text-success">R$619,90/mês <br><small class="text-muted">(12x sem juros)</small></p>
@@ -288,14 +361,17 @@
               <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Consultas, exames e vacinas para 3 gatos</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Economia de R$729,80/mês comparado a planos individuais</li>
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO UM PLANO MULTICAT</a>
+            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
 
       <!-- Multicat: 4 Gatos -->
       <div class="col-md-4">
-        <div class="card card-hover h-100 border-0 shadow" style="border-radius: 20px;">
+        <div class="card card-hover h-100 border-3 shadow" style=" border-color: #FF832E; position: relative; border-radius: 20px;">
+          <div class="position-absolute top-0 start-50 translate-middle badge bg-warning text-dark rounded-pill px-3 py-1" style="z-index: 1; margin-top: 0px;">
+            ⭐ MAIS ECONÔMICO ⭐
+          </div>
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Multicat: 4 Gatos</h5>
             <p class="card-text fs-4 fw-semibold text-success">R$759,90/mês <br><small class="text-muted">(12x sem juros)</small></p>
@@ -303,7 +379,7 @@
               <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Consultas, exames e vacinas para 4 gatos</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Economia de R$1.039,70/mês comparado a planos individuais</li>
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO UM PLANO MULTICAT</a>
+            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
@@ -312,91 +388,104 @@
 </section>
 
 
-<section class="container my-5" id="depoimentos">
-  <h2 class="text-center mb-4 body-highlight" style="width: fit-content;">O que dizem nossos <span class="highlight">tutores</span></h2>
+<section class="container my-5" id="tutores">
+  <h2 class="body-highlight">O que dizem nossos tutores:</h2>
 
-  <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+  <div class="d-flex gap-3 overflow-auto pb-5">
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row">
-          <!-- Depoimento 1 -->
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 border-0 shadow bg-light p-4">
-              <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
-              <p>"Desde que assinei o CatCareVet, meu gato Percy recebe um atendimento completamente diferenciado. A tranquilidade de poder levá-lo para consultas ilimitadas sem preocupação com custos extras é inestimável."</p>
-              <p class="fw-bold mt-3 mb-0 highlight">Amanda Oliveira</p>
-              <small class="text-muted">Tutora do Percy • Plano Completo</small>
-            </div>
-          </div>
-          <!-- Depoimento 2 -->
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 border-0 shadow bg-light p-4">
-              <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
-              <p>"Como idosa, me preocupo com gastos fixos, mas o CatCareVet valeu cada centavo. Minha gata teve um problema renal e graças ao plano, pude fazer todos os exames necessários sem me preocupar com o custo. Recomendo para todos os tutores."</p>
-              <p class="fw-bold mt-3 mb-0 highlight">Vera Lúcia Santos</p>
-              <small class="text-muted">Tutora da Mel • Plano Intermediário</small>
-            </div>
-          </div>
-          <!-- Placeholder -->
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 border-0 shadow bg-light p-4 text-center text-muted d-flex align-items-center justify-content-center">
-              <p><em>Mais depoimentos em breve...</em></p>
-            </div>
-          </div>
-        </div>
+    <!-- Depoimento 1 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Nossa experiência na The Cats foi incrível. Odin foi extremamente bem atendido, com muita paciência e respeito. A Dra. Jordânia foi maravilhosa e o atendimento fez toda diferença!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Nádia Marques</p>
+        <small class="text-muted">Tutora do Odin • Atendimento Clínico</small>
       </div>
-
-      <!-- Slide 2 - espaço para mais depoimentos -->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 border-0 shadow p-4 bg-light">
-              <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
-              <p>"Como idosa, me preocupo com gastos fixos, mas o CatCareVet valeu cada centavo. Minha gata teve um problema renal e graças ao plano, pude fazer todos os exames necessários sem me preocupar com o custo. Recomendo para todos os tutores."</p>
-              <p class="fw-bold mt-3 mb-0 highlight">Vera Lúcia Santos</p>
-              <small class="text-muted">Tutora da Mel • Plano Intermediário</small>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 border-0 shadow bg-light p-4">
-              <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
-              <p>"Como idosa, me preocupo com gastos fixos, mas o CatCareVet valeu cada centavo. Minha gata teve um problema renal e graças ao plano, pude fazer todos os exames necessários sem me preocupar com o custo. Recomendo para todos os tutores."</p>
-              <p class="fw-bold mt-3 mb-0 highlight">Vera Lúcia Santos</p>
-              <small class="text-muted">Tutora da Mel • Plano Intermediário</small>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 border-0 shadow bg-light p-4">
-              <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
-              <p>"Como idosa, me preocupo com gastos fixos, mas o CatCareVet valeu cada centavo. Minha gata teve um problema renal e graças ao plano, pude fazer todos os exames necessários sem me preocupar com o custo. Recomendo para todos os tutores."</p>
-              <p class="fw-bold mt-3 mb-0 highlight">Vera Lúcia Santos</p>
-              <small class="text-muted">Tutora da Mel • Plano Intermediário</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
+    <!-- Depoimento 2 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Levei o Vivaldi e fui super bem atendida pela Dra. Larissa e Dra. Samara. Uma clínica em categoria 10. Exames bem feitos e explicações claras. Recomendo muito!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Ana Luiza Oliveira Souza</p>
+        <small class="text-muted">Tutora do Vivaldi • Consulta + Exames</small>
+      </div>
+    </div>
 
-  <!-- Botão CTA -->
-  <div class="text-center mt-4">
-    <a href="#formulario" class="btn" id="btn-hero">QUERO ESSE CUIDADO PARA MEU GATO</a>
+    <!-- Depoimento 3 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Deixei minha gatinha Francis hospedada por 1 semana. Depois ela passou por uma taratectomia e tudo correu bem! Recebi vídeos, carinho e muita atenção. Recomendo a todos!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Gabriela Demas</p>
+        <small class="text-muted">Tutora da Francis • Cirurgia + Hospedagem</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 4 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Nosso gato Gregório estava com um quadro bem agudo e fomos muito bem recebidos. A Vet Giovanna acompanhou tudo com muito carinho. Estamos muito felizes com o atendimento!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Pedro Brito</p>
+        <small class="text-muted">Tutor do Gregório • Atendimento Emergencial</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 5 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Em nome da família do Noah, gostaria de agradecer a todos da equipe The Cats que se dedicaram aos cuidados do nosso amado gatinho!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Noah da Ananda</p>
+        <small class="text-muted">Tutor do Noah • Acompanhamento</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 6 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Muito obrigada Luísa. Gostaria de agradecer vocês pelo carinho e dedicação com a Stellinha. Vocês fizeram um trabalho maravilhoso."</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Leo da Elisa Weber</p>
+        <small class="text-muted">Tutora da Stellinha • Cuidados contínuos</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 7 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Até que enfim achamos uma clínica que conseguiu diagnosticar e tratar nossa gatinha. A veterinária foi super atenciosa, explicou tudo com clareza e, em pouco mais de um mês, nossa menina está praticamente curada. Valeu cada centavo."</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Kátia Rodrigues Sátiro</p>
+        <small class="text-muted">Tutora de gatinha em tratamento</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 8 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Levei uma gatinha resgatada que adotei e ficou internada por 2 semanas. Não poderia pedir um atendimento melhor. Excelência em atendimento, cuidados, profissionalismo e amor com os gatinhos."</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Daniel Alvares</p>
+        <small class="text-muted">Tutor de gatinha resgatada • Internação</small>
+      </div>
+    </div>
+
+    <!-- Depoimento 9 -->
+    <div class="flex-shrink-0" style="width: 350px;">
+      <div class="card h-100 border-0 shadow p-4">
+        <div class="mb-2 text-warning fs-5">⭐⭐⭐⭐⭐</div>
+        <p>"Me sinto em casa na The Cats! E também me sinto segura em deixar essa equipe cuidar dos meus gatos! Eles se sentem em casa lá! Dra. Giovanna é excelente!"</p>
+        <p class="fw-bold mt-3 mb-0 highlight">Eleva Educacional</p>
+        <small class="text-muted">Tutora de múltiplos gatos • Acompanhamento</small>
+      </div>
+    </div>
+
   </div>
 </section>
 
-
-  
   <!-- Dúvidas Frequentes -->
 <section id="duvidas" class="py-5">
     <div class="container">
@@ -527,13 +616,16 @@
 
   
   <!-- Botão Flutuante WhatsApp -->
-  <a href="https://wa.me/553121183047" class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow" style="z-index: 9999;">
-    <i class="bi bi-whatsapp large"></i>
-  </a>
-  
-  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/bootstrap.bundle.min.js"></script>
   <script src="assets/custom.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1200 // todas as animações duram 1 segundo por padrão
+    });
+  </script>
+  
 
 </body>
 </html>
