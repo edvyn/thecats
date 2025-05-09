@@ -98,8 +98,8 @@ body {
 }
 
 .hero-text p{
-    max-width: 600px;
-    font-size: 1.3rem;
+    max-width: 500px;
+    font-size: 1.5rem;
     color: rgb(41, 40, 40);
     font-weight: 400;
 }
@@ -147,6 +147,9 @@ body {
   color: #28a745;
   font-size: 1.2rem;
 }
+
+
+
 
 .btn {
   background-color: var(--secondary-color);
@@ -230,6 +233,10 @@ body {
       font-size: 0.7rem;
       width: 24%;
       margin-left: 3px;
+    }
+    .btn-centralizado {
+      display: block;
+      margin: 0 auto;
     }
 
 }
