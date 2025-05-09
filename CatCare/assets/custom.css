@@ -595,7 +595,7 @@ iframe {
 /* Estilos base */
 .fr, .fl, .fd, .fu, .sl {
   opacity: 0;
-  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 /* Fade Right */
