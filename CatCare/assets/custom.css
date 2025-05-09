@@ -23,6 +23,8 @@ body{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 #btn-nav{
   background-color: #FF832E;
@@ -329,6 +331,16 @@ body{
   color: #0749AC;
 }
 
+#wcu .btn{
+  background-color: #0749AC;
+  border: 1px solid #0749AC;
+  max-width: 500px;
+}
+
+#wcu .btn:hover{
+  color: white;
+}
+
 #sem-plano i{
   color: #242424;
 }
@@ -446,7 +458,7 @@ body{
 }
 
 #uti{
- margin-top: 80px;
+ 
  background-color: #14448b;
 }
 #uti i{
