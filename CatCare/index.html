@@ -10,7 +10,11 @@
     <link rel="preload" as="image" href="assets/img/c2.webp">
     <link rel="preload" as="image" href="assets/img/c3.webp">
     <link rel="icon" href="assets/img/fav.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Preload o CSS para evitar bloqueio -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Carregamento normal com cache -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" media="all">
+
 
 
 </head>
@@ -37,13 +41,13 @@
         <!-- Links centralizados -->
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Planos</a>
+            <a class="nav-link" href="#planos">Planos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">benefícios</a>
+            <a class="nav-link" href="#beneficios">benefícios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#plantao">dúvidas</a>
+            <a class="nav-link" href="#duvidas">dúvidas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contato">Contato</a>
@@ -125,6 +129,70 @@
     </div>
   </section>
 
+  <section id="beneficios">
+    <div class="container text-center">
+      <h2 class="mb-3 fu">Cada momento com seu felino é <span class="highlight">precioso</span></h2>
+      <p class="mb-5 fu">Por isso incluímos em todos os planos:</p>
+
+      <div class="row g-4">
+        <div class="col-md-4 fd">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-shield-plus fs-1 mb-3"></i>
+              <p class="card-text">Vacinação anual completa para manter seu bebê protegido</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fd">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-heart-pulse fs-1 mb-3"></i>
+              <p class="card-text">Anestesista dedicado que cuida do sono do seu pequeno como você faria</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fd">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-clipboard-pulse fs-1 mb-3"></i>
+              <p class="card-text">Exames que contam o que seu gatinho não consegue dizer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fd delay-1">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-hospital fs-1 mb-3"></i>
+              <p class="card-text">Aconchego e cuidado durante internações</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fd delay-1">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-eyedropper fs-1 mb-3"></i>
+              <p class="card-text">Ultrassom com cistocentese feito por mãos que entendem o valor de cada ronronado</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fd delay-1">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-tags fs-1 mb-3"></i>
+              <p class="card-text">Descontos exclusivos para tudo que seu filho de quatro patas possa precisar além do plano</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section id="wcu">
     <div class="container text-center">
       <h2 class="mb-4 fw-bold custom-heading">Por que aderir ao CatCareVet?</h2>
@@ -151,9 +219,9 @@
   
         <!-- Card sem plano -->
         <div class="col-md-4 fu delay-1" >
-          <div class="card card-hover h-100 border-0 shadow not-plan" style="border-radius: 20px;" id="sem-plano">
+          <div class="card card-hover border-0 shadow not-plan" style="border-radius: 20px;" id="sem-plano">
             <div class="card-body d-flex flex-column align-items-center text-center">
-              <h5 class="card-title fw-bold">Sem um plano de saúde...</h5>
+              <h5 class="fw-bold">Sem um plano de saúde...</h5>
               <ul class="mb-4 plan-list list-unstyled text-start">
                 <li><i class="bi bi-x-circle-fill"></i> Seu gatinho esconde a dor até que ela se torne insuportável, quebrando seu coração</li>
                 <li><i class="bi bi-x-circle-fill"></i> O susto de uma emergência pode significar escolhas difíceis entre R$1.000 e R$5.000 inesperadamente</li>
@@ -199,7 +267,7 @@
 <!---planos-->
 
 
-<section class="py-5 bg-dark" id="planos" >
+<section class="bg-dark" id="planos" >
   <div class="container text-center">
     <div class="container-planos-title fd">
       <h2 class="mb-4 fw-bold">Escolha o plano ideal para seu felino</h2>
@@ -384,9 +452,9 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-5 text-center">
-          <img src="assets/img/silvia.png" alt="Dra. Silvia Kurth" class="img-fluid" style="max-width: 100%;">
+          <img src="assets/img/silvia.png" alt="Dra. Silvia Kurth" class="img-fluid fl delay-1" style="max-width: 100%;">
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 fd delay-1">
           <h2 class="fw-bold mb-3">Dra. Silvia Kurth</h2>
           <p class="mb-1 text-muted fs-5">Médica Veterinária Especialista em Felinos e Intensivista</p>
           <ul class="list-unstyled mt-3 mb-4">
@@ -394,7 +462,7 @@
             <li class="mb-2"><i class="bi bi-people-fill text-success me-2"></i>Membro da Sociedade Brasileira de Medicina Felina</li>
             <li><i class="bi bi-heart-fill text-danger me-2"></i>Mais de 2.000 vidas felinas impactadas</li>
           </ul>
-          <blockquote class="blockquote px-4 py-3 bg-white rounded shadow-sm" >
+          <blockquote class="blockquote px-4 py-3 bg-white rounded shadow-sm fl delay-2" >
             <p class="mb-0 fst-italic">"Cada gato é único, e merece um cuidado que respeite suas particularidades. Essa filosofia inspirou a criação do CatCareVet: um plano que entende as necessidades específicas dos felinos."</p>
           </blockquote>
         </div>
@@ -502,7 +570,7 @@
 </section>
 
   <!-- Dúvidas Frequentes -->
-<section id="duvidas" class="py-5">
+<section id="duvidas">
     <div class="container">
       <h2 class="text-center mb-5  body-highlight" style="max-width: fit-content;">Dúvidas Frequentes</h2>
       
