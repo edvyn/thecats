@@ -444,6 +444,7 @@ body{
 #planos p{
   max-width: 600px;
 }
+
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -497,6 +498,12 @@ body{
   width: 1.1em;
   height: 1.1em;
   margin-top: 3px;
+}
+
+#planos-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -691,3 +698,30 @@ iframe {
 
 .delay-1 { transition-delay: 0.5s; }
 .delay-2 { transition-delay: 1s; }
+
+
+
+/* navegacao carrossel*/
+
+
+@media screen and (min-width:768px) {
+  #carouselTrack::-webkit-scrollbar {
+    display: none; /* remove a barra de rolagem no Chrome */
+  }
+
+  #carouselTrack {
+    scrollbar-width: none; /* remove a barra de rolagem no Firefox */
+  }
+}
+
+#carouselTrack > .flex-shrink-0 {
+  scroll-snap-align: start;
+  margin: 5px;
+}
+
+@media (max-width: 767.98px) {
+  #prevBtn,
+  #nextBtn {
+    display: none !important;
+  }
+}
