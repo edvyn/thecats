@@ -18,7 +18,7 @@ const carousel = document.getElementById("carouselTrack");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-const itemWidth = 1080; // 350px + margem de 2x5px
+const itemWidth = 700; // 350px + margem de 2x5px
 
 prevBtn.addEventListener("click", () => {
     carousel.scrollBy({ left: -itemWidth, behavior: "smooth" });
