@@ -414,7 +414,7 @@ body {
 
 .icon-instagram { color: #85ce30; }
 .icon-facebook { color: #85ce30; }
-.icon-whatsapp { color: #85ce30; }
+
 
 #sobre-nos{
   background-color: #242424;
@@ -470,6 +470,10 @@ body {
 .whatsapp-float:hover {
   transform: scale(1.1);
   text-decoration: none;
+}
+
+.whatsapp-float i {
+  font-size: 30px;
 }
 #plantao strong{
   color: #85ce30;
