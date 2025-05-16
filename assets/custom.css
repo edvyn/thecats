@@ -136,8 +136,8 @@ body {
 }
 
 .trust-badges {
-  top: 120px;
-  right: -200px;
+  top: 150px;
+  right: -180px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -184,14 +184,14 @@ body {
 
 @media screen and (max-width:768px){
     .hero{
-        padding-top: 0px;
-        margin-top: 50px;
         background-image: url(img/Frame\ 24.png);
-        min-height: fit-content;
+        background-size: cover;
+        height: fit-content;
+
     }
     .hero-right img{
         width: 100%;
-    
+        max-width: 340px;
         margin-top: 0px;
     }
     .navbar{
@@ -201,6 +201,9 @@ body {
     .navbar a{
         color: white;
         font-weight: 600;
+    }
+    .navbar img{
+        width: 50px;
     }
     .right-btns a{
       color: #354b42;
@@ -219,6 +222,7 @@ body {
       font-size: 1.1rem;
       color: rgb(41, 40, 40);
       font-weight: 400;
+      max-width: 350px;
     }
   
     .logo-hero img{
@@ -235,7 +239,7 @@ body {
 
     .trust-badges {
       right: 0px;
-      top: 390px;
+      top: 370px;
       flex-direction: row;
       gap: 0;
 
