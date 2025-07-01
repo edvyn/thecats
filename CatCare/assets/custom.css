@@ -1,5 +1,26 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Regular.woff2') format('woff2'),
+       url('assets/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Italic.woff2') format('woff2'),
+       url('assets/fonts/Roboto-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Bold.woff2') format('woff2'),
+       url('assets/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 
 html{
   scroll-behavior: smooth;
@@ -17,8 +38,7 @@ body{
 
 .navbar {
   transition: background-color 0.3s ease, margin-top 0.3s ease;
-  background-color: #ffffffbe;
-  backdrop-filter: blur(10px);
+  background-color: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -141,6 +161,7 @@ body{
 
 .item-intersecao {
   flex: auto;
+  gap: 10px;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 20px 20px;
@@ -153,6 +174,8 @@ body{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   color: #FF832E;
 }
+
+
 
 .item-intersecao i{
   color: #FF832E;
@@ -253,11 +276,9 @@ body{
 
   .navbar{
       padding-bottom: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       min-height: 80px;
   }
-
-
 
   #hero{
     height: 90vh;
@@ -286,6 +307,19 @@ body{
   align-items: center;
   padding-top: 100px;
 }
+
+.section-2 li{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.section-2 strong{
+  font-weight: 700;
+  color: #242424;
+  font-size: 1.2rem;
+}
 .section-2 h2{
   color: #0749AC;
   font-weight: bold;
@@ -296,6 +330,7 @@ body{
 .section-2 h3{
   color: #242424;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .section-2 p{
@@ -375,6 +410,11 @@ body{
 
 #wcu i{
   color: #0749AC;
+}
+
+#wcu li{
+  display: flex;
+  align-items: center;
 }
 
 #wcu .btn{
@@ -529,6 +569,21 @@ body{
   border-left: 4px solid #FF832E;
 }
 
+#silvia li{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #242424;
+  display: flex;
+  align-items: center;
+
+}
+
+#silvia li strong{
+  font-weight: 500;
+}
+#silvia li p{
+  margin: 0;
+}
 #uti{
  margin-top: 40px;
  background-color: #14448b;
@@ -541,7 +596,7 @@ body{
 
 .section-2 i{
   color: #FF832E;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-right: 10px;
 }
 
@@ -588,6 +643,13 @@ body{
   #uti-text{
     padding: 20px;
   }
+  #silvia li{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 8px;
+
+  }
 }
 
 .custom-heading{
@@ -604,17 +666,12 @@ body{
   margin-bottom: 20px;
 }
 
-.silvia{
-  background-color: #FF832E;
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .silvia h2{
   color: white;
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 20px;
-  margin-top: 5px;
 }
 .silvia blockquote{
   background-color: rgb(235, 235, 235);
@@ -650,7 +707,7 @@ iframe {
 
 #silvia i{
   color: #FF832E;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   margin-right: 10px;
 }
 

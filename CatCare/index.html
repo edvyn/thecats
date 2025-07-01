@@ -10,12 +10,6 @@
     <link rel="preload" as="image" href="assets/img/c2.webp">
     <link rel="preload" as="image" href="assets/img/c3.webp">
     <link rel="icon" href="assets/img/fav.ico" type="image/x-icon">
-    <!-- Preload o CSS para evitar bloqueio -->
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Carregamento normal com cache -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" media="all">
-
-
 
 </head>
 
@@ -88,7 +82,7 @@
 
         <!-- Conteúdo centralizado -->
         <div class="container position-absolute top-50 start-50 translate-middle text-white text-start" style="z-index: 3; max-width: 1200px;" id="hero-content">
-          <h1 class="mb-3 display-4 fw-bold fu">O Plano de Saúde do Primeiro Hospital Exclusivo para Felinos de Belo Horizonte</h1>
+          <h1 class="mb-3 display-4 fw-bold fu">O primeiro plano de saúde exclusivo para gatos  <span>no único hospital de felinos em BH.</span></h1>
           <p class="lead mb-4 fu">Prevenção hoje, <span>tranquilidade sempre</span> - com a excelência que seu gatinho merece!</p>
           <a href="#planos" class="btn btn-light " id="btn-hero">CONHEÇA NOSSOS PLANOS</a>
         </div>
@@ -96,19 +90,20 @@
     </section>
 
     <div class="div-interseccao d-flex justify-content-between flex-wrap text-dark text-center">
-      <div class="item-intersecao fd" >
-        <i class="bi bi-geo-alt-fill fs-2 mb-2"></i>
+      <div class="item-intersecao fd">
+        <img src="assets/img/icons/geo-alt-fill.svg" alt="Ícone de localização" class="mb-2" style="width: 2rem; height: 2rem;">
         Disponível 24 horas
       </div>
-      <div class="item-intersecao fd delay-1" >
-        <i class="bi bi-heart-pulse-fill fs-2 mb-2" style="transition-delay: 1s;"></i>
+      <div class="item-intersecao fd delay-1">
+        <img src="assets/img/icons/heart-pulse-fill.svg" alt="Ícone de batimento cardíaco" class="mb-2" style="width: 2rem; height: 2rem; transition-delay: 1s;">
         Vacinas Inclusas
       </div>
-      <div class="item-intersecao fd delay-2" >
-        <i class="bi bi-hospital fs-2 mb-2" style="transition-delay: 2s;"></i>
+      <div class="item-intersecao fd delay-2">
+        <img src="assets/img/icons/hospital.svg" alt="Ícone de hospital" class="mb-2" style="width: 2rem; height: 2rem; transition-delay: 2s;">
         Serviços sem Carência
       </div>
     </div>
+
     
   </div>
   
@@ -116,22 +111,35 @@
     <div class="container">
       <div class="row align-items-center" style="gap: 40px;">
         <div class="col-md-5">
-          <img src="assets/img/cats-hug.webp" alt="Gatinho confortável" class="img-fluid rounded fu" >
+          <img src="assets/img/cats-hug.webp" alt="Gatinho confortável" class="img-fluid rounded fu" loading="lazy">
         </div>
         <div class="col-md-6 fd delay-1">
           <h2 class="mb-4 body-highlight">Por que seu gatinho merece o <span class="highlight"> CatCare? </span></h2>
-          <h3 ><strong>Seu pequeno companheiro merece mais que uma consulta comum.</strong></h3>
+          <h3><strong>Seu pequeno companheiro merece mais que uma consulta comum.</strong></h3>
           <h3 class=""> Ele merece um <b> ambiente</b> onde cada detalhe foi pensado para o seu bem-estar:</h3>
           <ul class="list-unstyled mt-3 mb-4">
-            <li><i class="bi bi-patch-check-fill"></i> Salas silenciosas sem latidos e odores estressantes</li>
-            <li> <i class="bi bi-patch-check-fill"></i> Profissionais especializados em felinos, que entendem cada miado e comportamento</li>
-            <li> <i class="bi bi-patch-check-fill"></i> Equipamentos de última geração para diagnóstico avançado</li>
-            <li> <i class="bi bi-patch-check-fill"></i> UTI felina de referência com tecnologia de ponta e monitoramento 24h</li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="Ícone de verificação" style="width: 20px; margin-right: 8px;">
+              Salas silenciosas sem latidos e odores estressantes
+            </li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="Ícone de verificação" style="width: 23px; margin-right: 8px;">
+              Profissionais especializados em felinos, que entendem cada miado e comportamento
+            </li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="Ícone de verificação" style="width: 20px; margin-right: 8px;">
+              Equipamentos de última geração para diagnóstico avançado
+            </li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="Ícone de verificação" style="width: 20px; margin-right: 8px;">
+              UTI felina de referência com tecnologia de ponta e monitoramento 24h
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+
 
   <section id="beneficios">
     <div class="container text-center">
@@ -142,8 +150,8 @@
         <div class="col-md-4 fd">
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body">
-              <i class="bi bi-shield-plus fs-1 mb-3"></i>
-              <p class="card-text">Vacinação anual de qualidade (V5 + Raiva) para manter seu bebê sempre protegido.</p>
+              <img src="assets/img/icons/shield-plus.svg" alt="Ícone vacinação" class="mb-3" style="width: 2.6rem;">
+              <p class="card-text">Vacinação anual de qualidade (V5 + Raiva) para manter seu bichano sempre protegido.</p>
             </div>
           </div>
         </div>
@@ -151,7 +159,7 @@
         <div class="col-md-4 fd">
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body">
-              <i class="bi bi-heart-pulse fs-1 mb-3"></i>
+              <img src="assets/img/icons/heart-pulse.svg" alt="Ícone exames" class="mb-3" style="width: 2.6rem;">
               <p class="card-text">Exames preventivos que detectam o que seu gatinho não consegue dizer</p>
             </div>
           </div>
@@ -160,8 +168,8 @@
         <div class="col-md-4 fd">
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body">
-              <i class="bi bi-clipboard-pulse fs-1 mb-3"></i>
-              <p class="card-text">Ambiente hospitalar e UTI especializada garantindo aconchego e cuidadomesmo nos momentos mais difíceis</p>
+              <img src="assets/img/icons/clipboard-pulse.svg" alt="Ícone hospital" class="mb-3" style="width: 2.6rem;">
+              <p class="card-text">Ambiente hospitalar e UTI especializada garantindo aconchego e cuidado mesmo nos momentos mais difíceis</p>
             </div>
           </div>
         </div>
@@ -169,8 +177,8 @@
         <div class="col-md-4 fd delay-1">
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body">
-              <i class="bi bi-hospital fs-1 mb-3"></i>
-              <p class="card-text">Microchipagem individual para garantir que seu felino nunca se perca</p>
+              <img src="assets/img/icons/hospital.svg" alt="Ícone internação" class="mb-3" style="width: 2.6rem;">
+              <p class="card-text">Acesso a internação completa com o apoio de fisioterapeuta e acunpunturista para felinos</p>
             </div>
           </div>
         </div>
@@ -178,7 +186,7 @@
         <div class="col-md-4 fd delay-1">
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body">
-              <i class="bi bi-eyedropper fs-1 mb-3"></i>
+              <img src="assets/img/icons/eyedropper.svg" alt="Ícone consulta" class="mb-3" style="width: 2.6rem;">
               <p class="card-text">Consultas com especialistas para garantir a saúde do seu bichano</p>
             </div>
           </div>
@@ -187,7 +195,7 @@
         <div class="col-md-4 fd delay-1">
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body">
-              <i class="bi bi-tags fs-1 mb-3"></i>
+              <img src="assets/img/icons/tags.svg" alt="Ícone descontos" class="mb-3" style="width: 2.6rem;">
               <p class="card-text">Descontos exclusivos para tudo o que o seu filho de quatro patas possa precisar além do plano</p>
             </div>
           </div>
@@ -197,11 +205,12 @@
   </section>
 
 
+
   <section id="wcu">
     <div class="container text-center">
       <h2 class="mb-4 fw-bold custom-heading">Por que aderir ao CatCareVet?</h2>
-  
-      <div class="row g-4 justify-content-center ">
+
+      <div class="row g-4 justify-content-center">
         <!-- Card com plano -->
         <div class="col-md-4 fu">
           <div class="card card-hover h-100 border-4 shadow" style="border-color: #0749AC; position: relative; border-radius: 20px;">
@@ -211,61 +220,87 @@
             <div class="card-body d-flex flex-column align-items-center text-center">
               <h5 class="card-title fw-bold" style="color: #0749AC;">Com o CatCareVet…</h5>
               <ul class="mb-4 plan-list list-unstyled text-start">
-                <li><i class="bi bi-patch-check-fill"></i> Seu orçamento respira aliviado com economia de até 40%, permitindo mais mimos especiais</li>
-                <li><i class="bi bi-patch-check-fill"></i> Detectamos o que seu pequeno tenta esconder, porque conhecemos cada miado, cada olhar</li>
-                <li><i class="bi bi-patch-check-fill"></i> Você dorme tranquilo sabendo exatamente quanto investirá na saúde do seu filho felino</li>
-                <li><i class="bi bi-patch-check-fill"></i> Seu gatinho é recebido como membro da família em um ambiente onde cada ronronado importa</li>
+                <li>
+                  <img src="assets/img/icons/check-azul.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong style="color: #0749AC;">Economia inteligente </strong>- Até 40% de economia comparado aos custos de emergência, permitindo mais mimos especiais para seu bichano</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/check-azul.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong style="color: #0749AC;">Detecção precoce especializada </strong>- Nossa equipe felina identifica problemas que seu gatinho tenta esconder, porque conhecemos cada miado e comportamento</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/check-azul.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong style="color: #0749AC;">Tranquilidade financeira </strong>- Você dorme tranquilo sabendo exatamente quanto investirá na saúde do seu felino</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/check-azul.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong style="color: #0749AC;">Ambiente hospitalar premium </strong>- Seu gatinho é recebido no único hospital 100% felino de BH, onde cada ronronado importa</p>
+                </li>
               </ul>
               <a href="#formulario" class="btn" id="btn-hero" style="border-radius: 30px;">QUERO ESSA TRANQUILIDADE</a>
             </div>
           </div>
         </div>
-  
+
         <!-- Card sem plano -->
-        <div class="col-md-4 fu delay-1" >
+        <div class="col-md-4 fu delay-1">
           <div class="card card-hover border-0 shadow not-plan" style="border-radius: 20px;" id="sem-plano">
             <div class="card-body d-flex flex-column align-items-center text-center">
               <h5 class="fw-bold">Sem um plano de saúde...</h5>
               <ul class="mb-4 plan-list list-unstyled text-start">
-                <li><i class="bi bi-x-circle-fill"></i> Gatinhos escondem a dor até que ela se torne insuportável, quebrando seu coração</li>
-                <li><i class="bi bi-x-circle-fill"></i> O susto de uma emergência pode significar escolhas difíceis e gastos inesperados entre R$2.000 e R$8.000</li>
-                <li><i class="bi bi-x-circle-fill"></i> Sem check-ups regulares, problemas de saúde são detectados tardiamente e você perde momentos preciosos que para o tratamento e cura</li>
-                <li><i class="bi bi-x-circle-fill"></i> Seu companheiro pode ter sua qualidade de vida comprometida quando o diagnóstico chega tarde demais</li>
+                <li>
+                  <img src="assets/img/icons/check-preto.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong>Descoberta tardia </strong>- Gatinhos escondem os sintomas até a doença estar avançada, quebrando seu coração (e o seu bolso)</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/check-preto.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong>Emergências devastadoras </strong>- O susto de uma urgência pode significar gastos inesperados entre R$5.000 e R$25.000</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/check-preto.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong>Tratamentos complexos </strong>- Sem check-ups regulares, doenças são identificadas tardiamente e o tratamento fica mais caro, mais complexo e você e seu gatinho sofrem desnecessariamente</p>
+                </li>
+                <li>
+                  <img src="assets/img/icons/check-preto.svg" alt="Ícone verificado" style="width: 1.2rem; margin-right: 8px;">
+                  <p><strong>Atendimento inadequado </strong>- Clínicas mistas com latidos estressantes e veterinários generalistas, não especialistas em felinos</p>
+                </li>
               </ul>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
   
 
   <section id="uti">
     <section class="d-flex flex-column flex-lg-row align-items-stretch shadow-lg bg-dark">
       <!-- Imagem à direita -->
       <div class="col-12 col-lg-7">
-        <img src="assets/img/cat-uti.webp" alt="Gato saudável" class="w-100 h-100 object-fit-cover img-shadow-strong fl delay-1" >
+        <img src="assets/img/cat-uti.webp" alt="Gato saudável" class="w-100 h-100 object-fit-cover img-shadow-strong fl delay-1" loading="lazy">
       </div>
 
-      <div class="col-12 col-lg-5 d-flex flex-column justify-content-center py-5 fd " id="uti-text" >
+      <div class="col-12 col-lg-5 d-flex flex-column justify-content-center py-5 fd" id="uti-text">
         <h2 class="mb-3">UTI Felina de Referência</h2>
         <p>Nossos pacientes têm acesso à tecnologia de ponta para diagnóstico e tratamento, em um ambiente exclusivamente pensado para gatos.</p>
         <h5 class="mt-3 mb-2">Equipamentos Destacados:</h5>
         <ul class="list-unstyled">
-          <li><i class="bi bi-patch-check-fill"></i> Suporte Respiratório Avançado</li>
-          <li><i class="bi bi-patch-check-fill"></i> Monitoramento Multiparamétrico</li>
-          <li><i class="bi bi-patch-check-fill"></i> Bombas de Infusão Precisas</li>
-          <li><i class="bi bi-patch-check-fill"></i> Ultrassom Portátil Lumine Phillips</li>
-          <li><i class="bi bi-patch-check-fill"></i> Desfibrilador Cardíaco</li>
-          <li><i class="bi bi-patch-check-fill"></i> Incubadora com Controle Ambiental</li>
+          <li><img src="assets/img/icons/check.svg" alt="ícone" style="width: 1.2rem; margin-right: 8px;"> Suporte Respiratório Avançado</li>
+          <li><img src="assets/img/icons/check.svg" alt="ícone" style="width: 1.2rem; margin-right: 8px;"> Monitoramento Multiparamétrico</li>
+          <li><img src="assets/img/icons/check.svg" alt="ícone" style="width: 1.2rem; margin-right: 8px;"> Bombas de Infusão Precisas</li>
+          <li><img src="assets/img/icons/check.svg" alt="ícone" style="width: 1.2rem; margin-right: 8px;"> Ultrassom Portátil Lumine Phillips</li>
+          <li><img src="assets/img/icons/check.svg" alt="ícone" style="width: 1.2rem; margin-right: 8px;"> Desfibrilador Cardíaco</li>
+          <li><img src="assets/img/icons/check.svg" alt="ícone" style="width: 1.2rem; margin-right: 8px;"> Incubadora com Controle Ambiental</li>
         </ul>
-        <a href="https://wa.me/5531987654321" target="_blank" class="btn" id="btn-hero" >
+        <a href="https://wa.me/5531987654321" target="_blank" class="btn" id="btn-hero">
           PROTEJA SEU GATO COM O CATCAREVET
         </a>
       </div>
     </section>
-    
   </section>
+
   
 
 <!---planos-->
@@ -286,21 +321,21 @@
             <h5 class="card-title fw-bold" style="color: #0749AC;">Plano Básico</h5>
             <img src="assets/img/plano-basico.webp" alt="">
             <p class="card-text fs-4 fw-semibold">12x de R$ 449,90 <br> <small>sem juros no cartão</small></p>
-            <p class="card-text fw-semibold" style="font-size: 0.7rem;">(Desconto exclusivo de 5% em todos os procedimentos que extrapolem o que está incluído no plano ou o que esteja fora da cobertura)</p>
+            <p class="card-text fw-semibold" style="font-size: 0.7rem;">Desconto de 5% em todos os procedimentos que extrapolem o que está incluído no plano</p>
             <ul class="text-start mb-4 plan-list">
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>até 3 dias de internação regime simples</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>02 consultas + seus retornos (anual)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem6 + ggt</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem10</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x US abdominal</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x urina rotina</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x eletrocardiograma</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x filv/felv</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>vacinas anuais (5º e raiva)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia + anestesista até 2h de procedimento</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>3 dias de internação no regime simples</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>2 consultas + retornos (por ano)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem6 + ggt</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem10</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 Ultrassom abdominal</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 urina rotina</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 eletrocardiograma</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 FILV/FELV</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Vacinas anuais (5º e raiva)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia em procedimento de até 2h</li>
 
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
+            <a href="https://wa.me/553121183047" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
@@ -315,23 +350,23 @@
             <h5 class="card-title fw-bold" style="color: #0749AC;">Plano Intermediário</h5>
             <img src="assets/img/plano-medio.webp" alt="">
             <p class="card-text fs-4 fw-semibold"> 12x de R$ 695,90 <br><small>sem juros no cartão</small></p>
-            <p class="card-text fw-semibold" style="font-size: 0.7rem;">(Desconto exclusivo de 8% em todos os procedimentos que extrapolem o que está incluído no plano ou o que esteja fora da cobertura)</p>
+            <p class="card-text fw-semibold" style="font-size: 0.7rem;">Desconto de 8% em todos os procedimentos que extrapolem o que está incluído no plano</p>
             <ul class="text-start mb-4 plan-list">
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>04 consultas + retornos (anual)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>até 5 dias de internação regime simples</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>5 dias de internação no regime simples</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>4 consultas por ano</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem6 + ggt</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x chem10</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem10</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 lyte 4</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x US abdominal + cisto centese</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x urina rotina + RPCU</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x filv/felv</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>vacinas anuais (5º e raiva)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 Ultrassom abdominal + cistocentese</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 urina rotina + RPCU</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 eletrocardiograma</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia + anestesista até 2h de procedimento</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 FILV/FELV</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Vacinas anuais (5º e Raiva)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia em procedimento de até 2h</li>
               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Cremação coletiva em caso de óbito</li>
 
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
+            <a href="https://wa.me/553121183047" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
@@ -343,31 +378,31 @@
             <h5 class="card-title fw-bold" style="color: #0749AC;">Plano Completo</h5>
             <img src="assets/img/plano-completo.webp" alt="" style="width: 120px;">
             <p class="card-text fs-4 fw-semibold"> 12x de R$875,90 <br><small>sem juros no cartão</small></p>
-            <p class="card-text fw-semibold" style="font-size: 0.7rem;">(Desconto exclusivo de 10% em todos os procedimentos que extrapolem o que está incluído no plano ou o que esteja fora da cobertura)</p>
+            <p class="card-text fw-semibold" style="font-size: 0.7rem;">Desconto de 10% em todos os procedimentos que extrapolem o que está incluído no plano</p>
             <ul class="text-start mb-4 plan-list">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                nº de consultas anuais ilimitado
+                5 dias de internação no regime simples
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                até 5 dias de internação regime simples
+                3 dias de internação no regime semi-intensivo 
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                até 3 dias de internação regime semi-intensivo
+                2 dias de internação no regime intensivo (UTI) 
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                até 2 dias de internação regime intensivo (UTI)
+                Consultas ilimitadas
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
@@ -391,50 +426,50 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                1 fpl (lipase especifica felina)
+               1 flp (lipase específica felina) 
               </li>
                             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-               1 ecodopplercardiograma + 1 eletrocardiograma
+               2 ultrassom abdominal + 1 cistocentese 
               </li>
                             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                2x US abdominal + 1 cistocentese
+               1 urina rotina 
 
               </li>
                             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                1x urina rotina
+                1 urocultura + RPCU
               </li>
                             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                1 urocultura + 1 RPCU
+                1 ecodopplercardiograma + 1 eletrocardiograma
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                1x filv/felv
+                1 FILV/FELV
               </li>
                 <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                vacinas anuais (5º e raiva)
+                Vacinas anuais (5º e raiva)
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
                   <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/>
                 </svg>
-                1 castração + anestesia com anestesista até 2h de procedimento
+                Castração com anestesia até 2h de procedimento
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-2">
@@ -443,7 +478,7 @@
               Cremação coletiva em caso de óbito
               </li>
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
+            <a href="https://wa.me/553121183047" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
@@ -467,21 +502,21 @@
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Multicat: 2 Gatos</h5>
             <p class="card-text fs-4 fw-semibold text-success">12x de R$519,90 <br><small class="text-muted">sem juros no cartão</small></p>
-            <p class="card-text fw-semibold" style="font-size: 0.7rem;">(Desconto exclusivo de 5% em todos os procedimentos que extrapolem o que está incluído no plano ou o que esteja fora da cobertura)</p>
+            <p class="card-text fw-semibold" style="font-size: 0.7rem;">Desconto de 5% em todos os procedimentos que extrapolem o que está incluído no plano</p>
 
             <ul class="text-start mb-4 plan-list">
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>até 3 dias de internação regime simples</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>02 consultas + retornos (anual)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem6 + ggt + calcio</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem10</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x US abdominal + cisto centese</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x urina rotina</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x eletrocardiograma</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x filv/felv</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>vacinas anuais (5º e raiva)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia + anestesista até 2h de procedimento</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>3 dias de internação no regime simples</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>2 consultas + retornos (por ano)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem6 + ggt + cálcio</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem10</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 Ultrassom abdominal + cistocentese</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 urina rotina</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 eletrocardiograma</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 FILV/FELV</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Vacinas anuais (5º e raiva)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia em procedimento de até 2h</li>
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
+            <a href="https://wa.me/553121183047" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
@@ -492,20 +527,20 @@
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Multicat: 3 Gatos</h5>
             <p class="card-text fs-4 fw-semibold text-success">12x de R$619,90 <br><small class="text-muted">sem juros no cartão</small></p>
-            <p class="card-text fw-semibold" style="font-size: 0.7rem;">(Desconto exclusivo de 5% em todos os procedimentos que extrapolem o que está incluído no plano ou o que esteja fora da cobertura)</p>
+            <p class="card-text fw-semibold" style="font-size: 0.7rem;">Desconto de 5% em todos os procedimentos que extrapolem o que está incluído no plano</p>
             <ul class="text-start mb-4 plan-list">
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>até 3 dias de internação regime simples</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>02 consultas + retornos (anual)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem6 + ggt + calcio</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem10</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x US abdominal + cisto centese</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x urina rotina</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x eletrocardiograma</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x filv/felv</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>vacinas anuais (5º e raiva)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia + anestesista até 2h de procedimento </li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>3 dias de internação no regime simples</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>2 consultas + retornos (por ano)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem6 + ggt + cálcio</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem10</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 Ultrassom abdominal + cistocentese</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 urina rotina</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 eletrocardiograma</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 FILV/FELV</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Vacinas anuais (5º e raiva)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia em procedimento de até 2h</li>
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
+            <a href="https://wa.me/553121183047" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
@@ -519,21 +554,21 @@
           <div class="card-body">
             <h5 class="card-title fw-bold" style="color: #0749AC;">Multicat: 4 Gatos</h5>
             <p class="card-text fs-4 fw-semibold text-success">12x de R$759,90 <br><small class="text-muted">sem juros no cartão</small></p>
-            <p class="card-text fw-semibold" style="font-size: 0.7rem;">(Desconto exclusivo de 5% em todos os procedimentos que extrapolem o que está incluído no plano ou o que esteja fora da cobertura)</p>
+            <p class="card-text fw-semibold" style="font-size: 0.7rem;">Desconto de 5% em todos os procedimentos que extrapolem o que está incluído no plano</p>
 
             <ul class="text-start mb-4 plan-list">
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>02 consultas + retornos (anual)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>3 diárias de internação simples</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem6 + ggt + calcio</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>01 chem10</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x US abdominal + cisto centese</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x urina rotina</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x eletrocardiograma</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1x filv/felv</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>vacinas anuais (5º e raiva)</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia + anestesista até 2h de procedimento</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>3 dias de internação no regime simples</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>2 consultas + retornos (por ano)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem6 + ggt + cálcio</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 chem10</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 Ultrassom abdominal + cistocentese</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 urina rotina</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 eletrocardiograma</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 FILV/FELV</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>Vacinas anuais (5º e raiva)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 1 1 1.06-1.06L6 8.439l7.485-7.51z"/></svg>1 anestesia em procedimento de até 2h</li>
             </ul>
-            <a href="#" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
+            <a href="https://wa.me/553121183047" class="btn w-100 fw-bold text-white" style="background-color: #FF832E;">QUERO ESTE PLANO</a>
           </div>
         </div>
       </div>
@@ -542,29 +577,43 @@
 </section>
 
 <section class="py-5" id="silvia">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-5 text-center">
-          <img src="assets/img/thecats.webp" alt="Dra. Silvia Kurth" class="img-fluid fl delay-1" style="max-width: 100%;">
-        </div>
-        <div class="col-md-7 fd delay-1">
-          <h2 class="fw-bold mb-3 mt-1">The Cats</h2>
-          <p class="mb-1 text-muted fs-5">O Primeiro Hospital Exclusivo para Felinos de Belo Horizonte</p>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="mb-1"><i class="bi bi-patch-check-fill"></i>Pioneiro em medicina felina - Primeiro hospital 100% dedicado aos felinos em BH</li>
-            <li class="mb-1"><i class="bi bi-patch-check-fill"></i>Inovação hospitalar - Única UTI felina da cidade com tecnologia de ponta</li>
-            <li class="mb-1"><i class="bi bi-patch-check-fill"></i>Crescimento excepcional - Mais de 10.000 atendimentos especializados realizados</li>
-            <li class="mb-1"><i class="bi bi-patch-check-fill"></i>Equipe exclusiva - Profissionais dedicados apenas à medicina felina avançada</li>
-            <li class="mb-1"><i class="bi bi-patch-check-fill"></i>Estrutura completa - Centro cirúrgico, UTI, laboratório próprio e internação 24h</li>
-            
-          </ul>
-          <blockquote class="blockquote px-4 py-3 bg-white rounded shadow-sm fl delay-1" >
-            <p class="mb-0 fst-italic">"Cada gato é único e merece um cuidado que respeite suas particularidades. Esta visão me levou a criar o primeiro hospital exclusivo para felinos de BH e inspirou o CatCareVet: um plano de saúde que aproveita nossa estrutura hospitalar única." <br> <br>Silvia Kurth - Fundadora The Cats</p>
-          </blockquote>
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center">
+        <img src="assets/img/thecats.webp" alt="Dra. Silvia Kurth" class="img-fluid fl delay-1" style="max-width: 100%;" loading="lazy">
       </div>
+      <div class="col-md-7 fd delay-1">
+        <h2 class="fw-bold mb-3 mt-4 body-highlight">The Cats</h2>
+        <p class="mb-1 text-muted fs-4">O Primeiro Hospital Exclusivo para Felinos de Belo Horizonte</p>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li class="mb-1">
+            <p><img src="assets/img/icons/check.svg" alt="ícone check" class="icon-check"> <strong>Pioneiro em medicina felina:</strong> &nbsp;Primeiro hospital 100% dedicado aos felinos em BH</p>
+          </li>
+          <li class="mb-1">
+            <p><img src="assets/img/icons/check.svg" alt="ícone check" class="icon-check"> <strong>Inovação hospitalar:</strong> &nbsp;Única UTI felina da cidade com tecnologia de ponta</p>
+          </li>
+          <li class="mb-1">
+            <p><img src="assets/img/icons/check.svg" alt="ícone check" class="icon-check"> <strong>Crescimento excepcional:</strong> &nbsp;Mais de 10.000 atendimentos especializados realizados</p>
+          </li>
+          <li class="mb-1">
+            <p><img src="assets/img/icons/check.svg" alt="ícone check" class="icon-check"> <strong>Equipe exclusiva:</strong> &nbsp;Profissionais dedicados apenas à medicina felina avançada</p>
+          </li>
+          <li class="mb-1">
+            <p><img src="assets/img/icons/check.svg" alt="ícone check" class="icon-check"> <strong>Estrutura completa:</strong> &nbsp;Centro cirúrgico, UTI, laboratório próprio e internação 24h</p>
+          </li>
+        </ul>
+        <blockquote class="blockquote px-4 py-3 bg-white rounded shadow-sm fl delay-1">
+          <p class="mb-0 fst-italic">
+            "Cada gato é único e merece um cuidado que respeite suas particularidades. Esta visão me levou a criar o primeiro hospital exclusivo para felinos de BH e inspirou o CatCareVet: um plano de saúde que aproveita nossa estrutura hospitalar única."
+            <br><br>
+            <strong>Silvia Kurth - Fundadora The Cats</strong>
+          </p>
+        </blockquote>
+      </div>
+    </div>
   </div>
 </section>
+
 
 <section class="container py-5 px-4" id="tutores">
   <h2 class="body-highlight mb-4">O que dizem nossos tutores:</h2>
@@ -828,15 +877,22 @@
   
     </div>
 
-      <div class="text-center">
-        <iframe src="https://www.google.com/maps?q=Av.+Bandeirantes,+1482,+Mangabeiras,+Belo+Horizonte&output=embed" allowfullscreen></iframe>
-      </div>
+    <div class="text-center">
+      <iframe
+        src="https://www.google.com/maps?q=Av.+Bandeirantes,+1482,+Mangabeiras,+Belo+Horizonte&output=embed"
+        allowfullscreen
+        loading="lazy"
+        style="border:0; width:100%;">
+      </iframe>
+    </div>
+
   </section>
 
   <a href="https://wa.me/5531987654321" target="_blank" class="whatsapp-float">
-    <i class="bi bi-whatsapp"></i>
-    </svg>
+    <img src="assets/img/icons/whatsapp.svg" alt="WhatsApp" style="width: 24px; height: 24px;">
   </a>
+
+
 
   
   <!-- Rodapé -->
