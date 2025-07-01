@@ -1,25 +1,17 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('assets/fonts/Roboto-Regular.woff2') format('woff2'),
-       url('assets/fonts/Roboto-Regular.woff') format('woff');
-  font-weight: 400;
+  font-family: 'Roboto Variable';
+  src: url('assets/fonts/Roboto-VariableFont_wdth,wght.woff2') format('woff2');
+  font-weight: 100 900; /* vai do peso 100 até 900 */
   font-style: normal;
+  font-stretch: 75% 100%; /* largura variável, se suportado */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('assets/fonts/Roboto-Italic.woff2') format('woff2'),
-       url('assets/fonts/Roboto-Italic.woff') format('woff');
-  font-weight: 400;
+  font-family: 'Roboto Variable';
+  src: url('assets/fonts/Roboto-Italic-VariableFont_wdth,wght.woff2') format('woff2');
+  font-weight: 100 900;
   font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('assets/fonts/Roboto-Bold.woff2') format('woff2'),
-       url('assets/fonts/Roboto-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+  font-stretch: 75% 100%;
 }
 
 html{
@@ -27,6 +19,7 @@ html{
 }
 body{
   overflow-x: hidden;
+  font: 'Roboto Variable', sans-serif;
 }
 
 .navbar #btn-hero{
@@ -40,7 +33,7 @@ body{
   transition: background-color 0.3s ease, margin-top 0.3s ease;
   background-color: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Variable', sans-serif;
   font-weight: bold;
   text-align: center;
   display: flex;
