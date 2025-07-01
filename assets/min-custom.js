@@ -1,0 +1,1 @@
+const observer=new IntersectionObserver((e,r)=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("v"),r.unobserve(e.target))})});document.querySelectorAll(".fr, .fl, .fd, .fu, .sl").forEach(e=>{observer.observe(e)});
